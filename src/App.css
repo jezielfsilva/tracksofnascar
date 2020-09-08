@@ -22,6 +22,7 @@
 .box-track:hover {
   background-image: url('./assets/giphy.gif');
   background-size: cover;
+  box-shadow: 1px 1px 3px black;
 }
 
 .box-track:hover .text {
