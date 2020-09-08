@@ -303,19 +303,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>LIST OF NASCAR TRACKS</h1>
+        <h1 className="main-title">LIST OF NASCAR TRACKS</h1>
         <div className="container-tracks">
           {this.state.tracks.map((track) => (
             <div className="box-track">
               <img className="image-track" src={track.photo} />
-              <h1>{track.name}</h1>
-              <p>located in {track.location}</p>
-              <p>founded in {track.yearopen}</p>
-              <p>Total length {track.length}</p>
+              <h1 className="title-track">{track.name}</h1>
+              <p className="text">located in {track.location}</p>
+              <p className="text">founded in {track.yearopen}</p>
+              <p className="text">Total length {track.length}</p>
             </div>
           ))}
         </div>
-        <p>informações retiradas daqui https://www.nascar.com/tracks</p>
+        <p className="text-final">informações retiradas daqui <a href="https://www.nascar.com/tracks">www.nascar.com</a></p>
       </div>
     );
   }
