@@ -11,12 +11,13 @@
 .container-tracks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .box-track {
   width: 30vw;
   border-radius: 6px;
+  padding-top: 14px;
 }
 
 .box-track:hover {
@@ -32,6 +33,11 @@
 
 .box-track:hover .title-track {
   text-shadow: 1px 1px 1px black;
+}
+
+
+.box-track:hover .image-track {
+  box-shadow: 1px 1px 3px black;
 }
 
 .title-track {
